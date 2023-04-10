@@ -3,14 +3,20 @@
 }
 .header{
     text-align: center;
-    background-color: #343541;
+    background-color: #21212b;
+    background-image:url("../public/Darth-Grogu-banner.avif");
+    background-position: center;
+    background-size:cover;
     color: #ffffff;
-    padding: 1.5em;
-    border-radius: 0 0 40% 40%;
+    padding: 3em;
+    border-radius: 10px;
+    margin: 2em;
+}
+#grogu{
+  color: #000000;
 }
 .App {
     height: 100vh;
-    /* height: -webkit-fill-available; */
     background-color: #343541;
     display: flex;
     flex-direction: column;
@@ -18,13 +24,10 @@
     overflow: auto;
   }
   
-  /* --- Header style --- */
-  
   
   /* --- Chat Container style --- */
   .chat-container {
     height: 100%;
-    /* height: -webkit-fill-available; */
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -62,12 +65,13 @@
   }
   
   .profile-picture {
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
   }
   
   .profile-picture img {
     border-radius: 5px;
+    width: 40px;
   }
   
   .chat-bubble {
@@ -117,6 +121,9 @@
     padding: 1em;
     border-radius: 5px;
   }
+  input#user-input:focus{
+    border:solid #e71f1f;
+  }
   
   .input-area button {
   background: transparent;
@@ -127,7 +134,7 @@
   }
   
   .input-area i {
-    color: #ececf1;
+    color: #e71f1f;
     margin: 0.5em;
     font-size: 1.5em;
     cursor: pointer;
